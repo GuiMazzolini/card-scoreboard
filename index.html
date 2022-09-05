@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1> Buraco Score</h1>
+        <p id="symbol"><span id="black">♠️</span><span id="red"> ♥️</span><span id="black"> ♣️</span><span id="red"> ♦️</span></div></p>
+        <div class="container">
+            <div>                
+                <h3>Player 1</h3>
+                <span id="homescore"></span><br>
+                <button class="score" onclick="hadd1()">+1000</button>
+                <button class="score" onclick="hadd2()">+100</button>
+                <button class="score" onclick="hadd3()">+10</button>
+            </div>
+            <div>
+                <h3>Player 2</h3>
+                <span id="guestscore"></span><br>
+                <button class="score" onclick="gadd1()">+1000</button>
+                <button class="score" onclick="gadd2()">+100</button>
+                <button class="score" onclick="gadd3()">+10</button>
+            </div>
+        </div>
+        <button class="settings" onclick="save()">SAVE</button><br>
+        <button class="settings" onclick="newgame()">NEW GAME</button>
+        <p id="save-1">Results Player 1: </p>
+        <p id="save-2">Results Player 2: </p>
+        <script src="index.js"></script>
+    </body>
+</html>
